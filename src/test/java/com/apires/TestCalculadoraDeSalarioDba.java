@@ -17,9 +17,9 @@ public class TestCalculadoraDeSalarioDba
 
 	@Before
 	public void init() {
-		
+
 	}
-	
+		//todo
     @Test
     public void calculaSalarioDeDbaAbaixoDoLimite()
     {
@@ -28,10 +28,10 @@ public class TestCalculadoraDeSalarioDba
     	Funcionario dba = new Funcionario("João Paulo", Cargo.DBA, valorSalarioBaseAbaixoDoLimite);
     	CalculadoraDeSalario calculaSalario = new CalculadoraDeSalario(dba);
     	Double salario = calculaSalario.calcula();
-    	
+
         assertEquals(salarioComDesconto , salario, 0.0001);
     }
-	
+
     @Test
     public void calculaSalarioDeDbaAcimaDoLimite()
     {
@@ -40,7 +40,7 @@ public class TestCalculadoraDeSalarioDba
     	Funcionario dba = new Funcionario("João Paulo", Cargo.DBA, valorSalarioBaseAcimaDoLimite);
     	CalculadoraDeSalario calculaSalario = new CalculadoraDeSalario(dba);
     	Double salario = calculaSalario.calcula();
-    	
+
         assertEquals(valorSalarioComDesconto , salario, 0.0001);
     }
 }
