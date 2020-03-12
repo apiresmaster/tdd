@@ -20,6 +20,7 @@ public class TestCalculadoraDeSalarioDba
 		
 	}
 	//ola pires
+	//tudo bem
     @Test
     public void calculaSalarioDeDbaAbaixoDoLimite()
     {
